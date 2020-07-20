@@ -12,8 +12,12 @@ const Header = () => {
         </div>
         <div className="header-authentication">
           <RiShoppingCartLine />
-          <button>Login</button>
-          <button className="signIn">Sign in</button>
+          <a type="button" href="/login">
+            Login
+          </a>
+          <a type="button" href="/signIn" className="signIn">
+            Sign in
+          </a>
         </div>
       </div>
 

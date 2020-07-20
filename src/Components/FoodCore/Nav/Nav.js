@@ -1,45 +1,48 @@
 import React, { useState } from "react";
 import "./Nav.css";
 
-const Nav = () => {
-  const [state1, setState1] = useState(() =>
-    window.location.pathname === "/breakfast" ? true : false
-  );
-  const [state2, setState2] = useState(() =>
-    window.location.pathname === "/lunch" ? true : false
-  );
-  const [state3, setState3] = useState(() =>
-    window.location.pathname === "/dinner" ? true : false
-  );
-
-  console.log(state1);
-
+const Nav = ({ handleFoodState, navColor }) => {
   return (
     <nav className="navbar">
       <ul>
         <li>
           <a
-            style={{ color: `${state1 ? "red" : "black"}` }}
+            style={{ color: `${navColor === "breakfast" ? "red" : "black"}` }}
             className="underline"
             href="/breakfast"
+            type="button"
+            onClick={(e) => {
+              handleFoodState("breakfast");
+              e.preventDefault();
+            }}
           >
             Breakfast
           </a>
         </li>
         <li>
           <a
-            style={{ color: `${state2 ? "red" : "black"}` }}
+            style={{ color: `${navColor === "lunch" ? "red" : "black"}` }}
             className="underline"
             href="/lunch"
+            type="button"
+            onClick={(e) => {
+              handleFoodState("lunch");
+              e.preventDefault();
+            }}
           >
             Lunch
           </a>
         </li>
         <li>
           <a
-            style={{ color: `${state3 ? "red" : "black"}` }}
+            style={{ color: `${navColor === "dinner" ? "red" : "black"}` }}
             className="underline"
             href="/dinner"
+            type="button"
+            onClick={(e) => {
+              handleFoodState("dinner");
+              e.preventDefault();
+            }}
           >
             Dinner
           </a>

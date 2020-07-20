@@ -49,12 +49,14 @@ $primaryBtn: rgb(233, 2, 60);
       .signIn {
         background-color: $primaryBtn;
       }
-      button {
+      a {
         cursor: pointer;
         background: transparent;
         border: none;
         border-radius: 15px;
         padding: 8px 20px;
+        text-decoration: none;
+        color: black;
       }
     }
   }

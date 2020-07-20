@@ -8,12 +8,6 @@ const FoodDetails = () => {
   const { foodDetails } = useParams();
   const product = fakeData.find((pd) => pd.title === foodDetails);
 
-  // useEffect(() => {
-  //   const prices = ;
-  //   const price = parseFloat(prices);
-  //   setPrice(price);
-  // }, []);
-
   const [price, setPrice] = useState(parseFloat(product.price));
   const [newPrice, setNewPrice] = useState(price);
   const [count, setCount] = useState(1);

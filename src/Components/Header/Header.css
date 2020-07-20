@@ -59,12 +59,14 @@
   background-color: #e9023c;
 }
 
-.header .topOfTheHeader .header-authentication button {
+.header .topOfTheHeader .header-authentication a {
   cursor: pointer;
   background: transparent;
   border: none;
   border-radius: 15px;
   padding: 8px 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .header .headerPoster {
