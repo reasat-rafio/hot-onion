@@ -1,0 +1,100 @@
+.FoodDetails {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.FoodDetails .FoodDetails-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-icon-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 120px;
+  padding: 9px 10px;
+  color: white;
+  background-color: #e9023c;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+.FoodDetails .FoodDetails-inner h1 {
+  font-size: 70px;
+  margin: 30px 0;
+}
+
+.FoodDetails .FoodDetails-inner p {
+  font-size: 17px;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-calculation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-calculation h3 {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-calculation form {
+  margin-left: 30px;
+  border: 1px solid grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-calculation form h4 {
+  margin: auto;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-calculation form .plus {
+  color: red;
+}
+
+.FoodDetails .FoodDetails-inner .FoodDetails-calculation form button {
+  padding: 5px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  outline: none;
+}
+
+.FoodDetails .img-div {
+  padding: 40px;
+  width: 50%;
+}
+
+.FoodDetails img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=FoodDetails.css.map */

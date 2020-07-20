@@ -1,0 +1,40 @@
+.breakfast-main {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+
+  .link {
+    text-decoration: none;
+  }
+
+  p:first-child {
+    color: black;
+    font-size: 20px;
+  }
+
+  p:nth-child(2) {
+    color: gray;
+    font-size: 13px;
+  }
+
+  p:last-child {
+    font-size: 17px;
+    color: black;
+  }
+
+  &:hover {
+    border: none;
+    box-shadow: 2px 2px 2px 5px rgb(242, 243, 238);
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+}

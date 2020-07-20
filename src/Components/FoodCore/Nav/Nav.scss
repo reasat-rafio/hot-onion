@@ -1,0 +1,46 @@
+$primaryColor: #e9023c;
+
+.navbar {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .underline {
+    color: black;
+    &::after {
+      content: "";
+      display: block;
+
+      width: 0;
+      height: 2px;
+      background: $primaryColor;
+      transition: width 0.3s;
+    }
+    &:focus {
+      color: $primaryColor;
+    }
+
+    &:hover::after {
+      bottom: 0;
+      left: 50%;
+      width: 100%;
+      transition: width 0.3s;
+    }
+    &:hover {
+      color: $primaryColor !important;
+    }
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    flex-direction: row;
+
+    a {
+      text-decoration: none;
+      padding: 0 20px;
+      font-size: 15px;
+    }
+  }
+}

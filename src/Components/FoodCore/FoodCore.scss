@@ -1,0 +1,18 @@
+.core-btn-div {
+  height: 120px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .core-btn {
+    background-color: #e9023c;
+    color: white;
+
+    display: block;
+    margin: auto;
+    padding: 13px 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$primaryBtn: rgb(233, 2, 60);
+@mixin flex() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin buttonStyle() {
+  background: $primaryBtn;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.header {
+  height: 600px;
+
+  .topOfTheHeader {
+    justify-content: center;
+    height: 50px;
+    display: flex;
+    background: rgb(255, 255, 243);
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 300px;
+      position: relative;
+      align-items: center;
+
+      img {
+        position: absolute;
+        height: 70%;
+      }
+    }
+
+    .header-authentication {
+      align-items: center;
+      justify-content: space-evenly;
+      display: flex;
+      width: 250px;
+      margin: auto 0 auto auto;
+      .signIn {
+        background-color: $primaryBtn;
+      }
+      button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        border-radius: 15px;
+        padding: 8px 20px;
+      }
+    }
+  }
+
+  .headerPoster {
+    height: 550px;
+    background: url(../../hot-onion-restaurent-resources/bannerbackground.png)
+      no-repeat center/cover;
+    @include flex();
+
+    .headerInPutSection {
+      @include flex();
+      flex-direction: column;
+      transform: translateY(-20px);
+
+      h2 {
+        font-size: 55px;
+      }
+
+      form {
+        margin-top: 15px;
+        input {
+          width: 400px;
+          padding: 12px 30px;
+          border: none;
+          border-radius: 10px;
+        }
+        button {
+          padding: 12px 25px;
+          @include buttonStyle();
+          border-radius: 15px;
+          color: white;
+          transform: translateX(-20px);
+        }
+      }
+    }
+  }
+}
