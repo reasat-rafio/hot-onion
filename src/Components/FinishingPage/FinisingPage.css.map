@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,+DAAgE,CAC1E,SAAS,CAAC,YAAY;CACzB",
+    "sources": [
+        "FinisingPage.scss"
+    ],
+    "names": [],
+    "file": "FinisingPage.css"
+}

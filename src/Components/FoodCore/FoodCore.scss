@@ -14,6 +14,9 @@
     border: none;
     outline: none;
     border-radius: 5px;
+    &:disabled {
+      background-color: lightgrey;
+    }
   }
 }
 
@@ -27,9 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .breakfast-section,
-    .lunch-section,
-    .dinner-section {
+    .breakfast-section {
       height: 100%;
       width: 100%;
       display: flex;

@@ -1,8 +1,71 @@
-.auth {
-  background-color: white;
+.SignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../hot-onion-restaurent-resources/6 signup.png") no-repeat center/cover;
   height: 100vh;
-  z-index: 100;
-  width: 100%;
-  position: absolute;
+}
+
+.signup-core {
+  background: white;
+  width: 60%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  margin-top: 50px;
+}
+
+.signup-core p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-core p a {
+  color: #e9023c;
+}
+
+.signup-core img {
+  display: block;
+  margin: auto;
+  height: 100px;
+  width: 350px;
+}
+
+.signup-core span {
+  margin-left: 20px;
+  padding: 5px;
+  color: #e9023c;
+}
+
+.signup-core form {
+  margin: auto;
+  margin-top: 50px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup-core form input {
+  outline: none;
+  border-radius: 8px;
+  padding: 15px 19px;
+  margin-top: 10px;
+  border: none;
+  background-color: #ece9e9;
+}
+
+.signup-core form input[type="submit"] {
+  background-color: #e9023c;
+  color: white;
 }
 /*# sourceMappingURL=Login.css.map */

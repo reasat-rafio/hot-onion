@@ -1,7 +1,53 @@
-.auth {
-  background-color: white;
+.SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../hot-onion-restaurent-resources/6\ signup.png")
+    no-repeat center/cover;
   height: 100vh;
-  z-index: 100;
-  width: 100%;
-  position: absolute;
+}
+
+.signup-core {
+  background: white;
+  width: 60%;
+  transform: translateY(-30%);
+  margin-top: 50px;
+  p {
+    margin-top: 20px;
+    text-align: center;
+    a {
+      color: #e9023c;
+    }
+  }
+  img {
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 350px;
+  }
+  span {
+    margin-left: 20px;
+    padding: 5px;
+    color: #e9023c;
+  }
+  form {
+    margin: auto;
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      outline: none;
+      border-radius: 8px;
+      padding: 15px 19px;
+      margin-top: 10px;
+      border: none;
+      background-color: rgb(236, 233, 233);
+    }
+    input[type="submit"] {
+      background-color: #e9023c;
+      color: white;
+    }
+  }
 }

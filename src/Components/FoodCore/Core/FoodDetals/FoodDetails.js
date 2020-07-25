@@ -3,6 +3,7 @@ import "./FoodDetails.css";
 import { useParams } from "react-router-dom";
 import fakeData from "../../../../FakeData";
 import { FiShoppingCart } from "react-icons/fi";
+import { addToDatabaseCart } from "../../../../utilities/databaseManager";
 
 const FoodDetails = () => {
   const { foodDetails } = useParams();
@@ -12,6 +13,8 @@ const FoodDetails = () => {
   const [newPrice, setNewPrice] = useState(price);
   const [count, setCount] = useState(1);
 
+  const [selectedData, setSelectedDAta] = useState([]);
+
   const handlePLusBtn = () => {
     const newCount = count + 1;
     setCount(newCount);
@@ -19,10 +22,18 @@ const FoodDetails = () => {
     setNewPrice(newPPrice);
   };
 
+  const getClickedFood = (product) => {
+    const newFood = [...selectedData, product];
+    setSelectedDAta(newFood);
+    const sameProduct = newFood.filter((pd) => pd.title === product.title);
+    const count = sameProduct.length;
+    addToDatabaseCart(product.title, count);
+    console.log(product.quantity);
+  };
+
   const handleMinusBtn = () => {
     const newCount = count - 1;
     setCount(newCount);
-
     const newPPrice = newPrice - price;
     setNewPrice(newPPrice);
   };
@@ -51,7 +62,10 @@ const FoodDetails = () => {
             </button>
           </form>
         </div>
-        <button className="FoodDetails-icon-btn">
+        <button
+          onClick={() => getClickedFood(product)}
+          className="FoodDetails-icon-btn"
+        >
           {" "}
           <FiShoppingCart size="20px" color="white" /> Add
         </button>

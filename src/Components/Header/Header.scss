@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  outline: none;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $primaryBtn: rgb(233, 2, 60);
@@ -26,7 +27,13 @@ $primaryBtn: rgb(233, 2, 60);
     height: 50px;
     display: flex;
     background: rgb(255, 255, 243);
-
+    .header-user {
+      width: 400px;
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .logo {
       display: flex;
       justify-content: center;
@@ -44,12 +51,14 @@ $primaryBtn: rgb(233, 2, 60);
       align-items: center;
       justify-content: space-evenly;
       display: flex;
-      width: 250px;
+      width: 350px;
       margin: auto 0 auto auto;
       .signIn {
+        color: rgb(241, 241, 241);
         background-color: $primaryBtn;
       }
       a {
+        outline: none;
         cursor: pointer;
         background: transparent;
         border: none;

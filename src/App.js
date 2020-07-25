@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import {
@@ -11,31 +11,36 @@ import {
 
 import FoodCore from "./Components/FoodCore/FoodCore";
 import Login from "./Components/Login/Login";
-import Core from "./Components/FoodCore/Core/Core";
 import Signin from "./Components/Login/Signin";
 import FoodDetails from "./Components/FoodCore/Core/FoodDetals/FoodDetails";
+import ReviewItem from "./Components/ReviewItem/ReviewItem";
+import FinishingPage from "./Components/FinishingPage/FinishingPage";
+import { PrivateRoute } from "./Components/firebase";
 
 function App() {
   return (
     <div>
       <Router>
         <Switch>
-          {/* <Router path="/login">
+          <Route exact path="/">
+            <Header />
+            <FoodCore />
+          </Route>
+          <Route path="/foodView/:foodDetails">
+            <FoodDetails />
+          </Route>
+          <Router path="/login">
             <Login />
           </Router>
           <Route path="/signIn">
             <Signin />
           </Route>
-          <Header /> */}
-          <Route exact path="/">
-            <Header />
-            <FoodCore />
+          <Route path="/review">
+            <ReviewItem />
           </Route>
-          <Route>
-            <Route path="/foodView/:foodDetails">
-              <FoodDetails />
-            </Route>
-          </Route>
+          <PrivateRoute path="/delivery">
+            <FinishingPage />
+          </PrivateRoute>
         </Switch>
       </Router>
     </div>

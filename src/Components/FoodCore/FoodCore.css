@@ -23,6 +23,10 @@
   border-radius: 5px;
 }
 
+.core-btn-div .core-btn:disabled {
+  background-color: lightgrey;
+}
+
 .food-Container {
   width: 100%;
 }
@@ -42,9 +46,7 @@
           align-items: center;
 }
 
-.food-Container .meals .breakfast-section,
-.food-Container .meals .lunch-section,
-.food-Container .meals .dinner-section {
+.food-Container .meals .breakfast-section {
   height: 100%;
   width: 100%;
   display: -webkit-box;

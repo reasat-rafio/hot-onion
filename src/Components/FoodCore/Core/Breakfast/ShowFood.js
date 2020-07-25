@@ -12,7 +12,7 @@ const ShowFood = ({ foodItems, handleClickMoreInfo }) => {
         <div className="card-body">
           <p className="card-title">{title}</p>
           <p className="card-text">{text}</p>
-          <p>{price}</p>
+          <p> $ {price}</p>
         </div>
       </Link>
     </div>
